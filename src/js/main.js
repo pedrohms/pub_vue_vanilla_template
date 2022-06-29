@@ -25,7 +25,6 @@ function globalVueAppInit() {
 
     const app = Vue.createApp({
         components: {
-            'component': Vue.defineAsyncComponent(() => loadModule('./vue/component.vue', options)),
             'home': Vue.defineAsyncComponent(() => loadModule('./vue/home.vue', options)),
         }
     });
